@@ -23,6 +23,9 @@ export class ProductListComponent {
   onNotify(){
     window.alert('You will be notified when the product goes on sale');
   }
+
+    protected readonly localStorage = localStorage;
+  protected readonly console = console;
 }
 
 

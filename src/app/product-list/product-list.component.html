@@ -6,7 +6,10 @@
       {{product?.name}}
     </a>
   </h3>
-
+  <div *ngIf="localStorage.getItem(product.name)" class="purchased">
+   <h2>purchased!</h2>
+    <p>You have already purchased this product</p>
+  </div>
   <button type="button" (click)="share()">
     Share
   </button>

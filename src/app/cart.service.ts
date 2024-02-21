@@ -21,7 +21,13 @@ export class CartService {
     this.items = [];
     return this.items;
   }
-
+  buyItems(){
+    this.items.forEach((item)=>{
+      let index = 0;
+      localStorage.setItem(item.name, "purchased")
+      index++;
+    })
+  }
   getShippingPrices(){
     return this.http.get<{type: string, price: number}[]>('/assets/shipping.json');
   }

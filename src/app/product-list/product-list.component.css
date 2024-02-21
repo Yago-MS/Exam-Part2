@@ -1,4 +1,12 @@
-
+.purchased{
+    background-color: deepskyblue;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.purchased *{
+    color: white;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
